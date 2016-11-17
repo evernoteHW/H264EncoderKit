@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7419ECE51DDBF2C500BB248D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ECE41DDBF2C500BB248D /* AppDelegate.swift */; };
+		7419ECE71DDBF2C500BB248D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ECE61DDBF2C500BB248D /* ViewController.swift */; };
+		7419ECEA1DDBF2C500BB248D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7419ECE81DDBF2C500BB248D /* Main.storyboard */; };
+		7419ECEC1DDBF2C500BB248D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7419ECEB1DDBF2C500BB248D /* Assets.xcassets */; };
+		7419ECEF1DDBF2C500BB248D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7419ECED1DDBF2C500BB248D /* LaunchScreen.storyboard */; };
+		7419ECFA1DDBF2C500BB248D /* H264EncoderKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ECF91DDBF2C500BB248D /* H264EncoderKitTests.swift */; };
+		7419ED051DDBF2C500BB248D /* H264EncoderKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ED041DDBF2C500BB248D /* H264EncoderKitUITests.swift */; };
+		7419ED131DDC075400BB248D /* H264EncoderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ED121DDC075400BB248D /* H264EncoderKit.swift */; };
+		74B59EC61DDD6FD2002F6611 /* H264FileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B59EC51DDD6FD2002F6611 /* H264FileHandle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7419ECF61DDBF2C500BB248D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7419ECD91DDBF2C500BB248D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7419ECE01DDBF2C500BB248D;
+			remoteInfo = H264EncoderKit;
+		};
+		7419ED011DDBF2C500BB248D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7419ECD91DDBF2C500BB248D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7419ECE01DDBF2C500BB248D;
+			remoteInfo = H264EncoderKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7419ECE11DDBF2C500BB248D /* H264EncoderKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H264EncoderKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7419ECE41DDBF2C500BB248D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7419ECE61DDBF2C500BB248D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7419ECE91DDBF2C500BB248D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7419ECEB1DDBF2C500BB248D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7419ECEE1DDBF2C500BB248D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7419ECF01DDBF2C500BB248D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7419ECF51DDBF2C500BB248D /* H264EncoderKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H264EncoderKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7419ECF91DDBF2C500BB248D /* H264EncoderKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264EncoderKitTests.swift; sourceTree = "<group>"; };
+		7419ECFB1DDBF2C500BB248D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7419ED001DDBF2C500BB248D /* H264EncoderKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H264EncoderKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7419ED041DDBF2C500BB248D /* H264EncoderKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264EncoderKitUITests.swift; sourceTree = "<group>"; };
+		7419ED061DDBF2C500BB248D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7419ED121DDC075400BB248D /* H264EncoderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264EncoderKit.swift; sourceTree = "<group>"; };
+		74B59EC51DDD6FD2002F6611 /* H264FileHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264FileHandle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7419ECDE1DDBF2C500BB248D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7419ECF21DDBF2C500BB248D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7419ECFD1DDBF2C500BB248D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7419ECD81DDBF2C500BB248D = {
+			isa = PBXGroup;
+			children = (
+				7419ECE31DDBF2C500BB248D /* H264EncoderKit */,
+				7419ECF81DDBF2C500BB248D /* H264EncoderKitTests */,
+				7419ED031DDBF2C500BB248D /* H264EncoderKitUITests */,
+				7419ECE21DDBF2C500BB248D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7419ECE21DDBF2C500BB248D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7419ECE11DDBF2C500BB248D /* H264EncoderKit.app */,
+				7419ECF51DDBF2C500BB248D /* H264EncoderKitTests.xctest */,
+				7419ED001DDBF2C500BB248D /* H264EncoderKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7419ECE31DDBF2C500BB248D /* H264EncoderKit */ = {
+			isa = PBXGroup;
+			children = (
+				7419ECE41DDBF2C500BB248D /* AppDelegate.swift */,
+				7419ECE61DDBF2C500BB248D /* ViewController.swift */,
+				7419ED121DDC075400BB248D /* H264EncoderKit.swift */,
+				74B59EC51DDD6FD2002F6611 /* H264FileHandle.swift */,
+				7419ECE81DDBF2C500BB248D /* Main.storyboard */,
+				7419ECEB1DDBF2C500BB248D /* Assets.xcassets */,
+				7419ECED1DDBF2C500BB248D /* LaunchScreen.storyboard */,
+				7419ECF01DDBF2C500BB248D /* Info.plist */,
+			);
+			path = H264EncoderKit;
+			sourceTree = "<group>";
+		};
+		7419ECF81DDBF2C500BB248D /* H264EncoderKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				7419ECF91DDBF2C500BB248D /* H264EncoderKitTests.swift */,
+				7419ECFB1DDBF2C500BB248D /* Info.plist */,
+			);
+			path = H264EncoderKitTests;
+			sourceTree = "<group>";
+		};
+		7419ED031DDBF2C500BB248D /* H264EncoderKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7419ED041DDBF2C500BB248D /* H264EncoderKitUITests.swift */,
+				7419ED061DDBF2C500BB248D /* Info.plist */,
+			);
+			path = H264EncoderKitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7419ECE01DDBF2C500BB248D /* H264EncoderKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7419ED091DDBF2C500BB248D /* Build configuration list for PBXNativeTarget "H264EncoderKit" */;
+			buildPhases = (
+				7419ECDD1DDBF2C500BB248D /* Sources */,
+				7419ECDE1DDBF2C500BB248D /* Frameworks */,
+				7419ECDF1DDBF2C500BB248D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H264EncoderKit;
+			productName = H264EncoderKit;
+			productReference = 7419ECE11DDBF2C500BB248D /* H264EncoderKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7419ECF41DDBF2C500BB248D /* H264EncoderKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7419ED0C1DDBF2C500BB248D /* Build configuration list for PBXNativeTarget "H264EncoderKitTests" */;
+			buildPhases = (
+				7419ECF11DDBF2C500BB248D /* Sources */,
+				7419ECF21DDBF2C500BB248D /* Frameworks */,
+				7419ECF31DDBF2C500BB248D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7419ECF71DDBF2C500BB248D /* PBXTargetDependency */,
+			);
+			name = H264EncoderKitTests;
+			productName = H264EncoderKitTests;
+			productReference = 7419ECF51DDBF2C500BB248D /* H264EncoderKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7419ECFF1DDBF2C500BB248D /* H264EncoderKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7419ED0F1DDBF2C500BB248D /* Build configuration list for PBXNativeTarget "H264EncoderKitUITests" */;
+			buildPhases = (
+				7419ECFC1DDBF2C500BB248D /* Sources */,
+				7419ECFD1DDBF2C500BB248D /* Frameworks */,
+				7419ECFE1DDBF2C500BB248D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7419ED021DDBF2C500BB248D /* PBXTargetDependency */,
+			);
+			name = H264EncoderKitUITests;
+			productName = H264EncoderKitUITests;
+			productReference = 7419ED001DDBF2C500BB248D /* H264EncoderKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7419ECD91DDBF2C500BB248D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = WeiHu;
+				TargetAttributes = {
+					7419ECE01DDBF2C500BB248D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W7486T4Q82;
+						ProvisioningStyle = Automatic;
+					};
+					7419ECF41DDBF2C500BB248D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W7486T4Q82;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7419ECE01DDBF2C500BB248D;
+					};
+					7419ECFF1DDBF2C500BB248D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W7486T4Q82;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7419ECE01DDBF2C500BB248D;
+					};
+				};
+			};
+			buildConfigurationList = 7419ECDC1DDBF2C500BB248D /* Build configuration list for PBXProject "H264EncoderKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7419ECD81DDBF2C500BB248D;
+			productRefGroup = 7419ECE21DDBF2C500BB248D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7419ECE01DDBF2C500BB248D /* H264EncoderKit */,
+				7419ECF41DDBF2C500BB248D /* H264EncoderKitTests */,
+				7419ECFF1DDBF2C500BB248D /* H264EncoderKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7419ECDF1DDBF2C500BB248D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7419ECEF1DDBF2C500BB248D /* LaunchScreen.storyboard in Resources */,
+				7419ECEC1DDBF2C500BB248D /* Assets.xcassets in Resources */,
+				7419ECEA1DDBF2C500BB248D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7419ECF31DDBF2C500BB248D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7419ECFE1DDBF2C500BB248D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7419ECDD1DDBF2C500BB248D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7419ECE71DDBF2C500BB248D /* ViewController.swift in Sources */,
+				7419ECE51DDBF2C500BB248D /* AppDelegate.swift in Sources */,
+				7419ED131DDC075400BB248D /* H264EncoderKit.swift in Sources */,
+				74B59EC61DDD6FD2002F6611 /* H264FileHandle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7419ECF11DDBF2C500BB248D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7419ECFA1DDBF2C500BB248D /* H264EncoderKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7419ECFC1DDBF2C500BB248D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7419ED051DDBF2C500BB248D /* H264EncoderKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7419ECF71DDBF2C500BB248D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7419ECE01DDBF2C500BB248D /* H264EncoderKit */;
+			targetProxy = 7419ECF61DDBF2C500BB248D /* PBXContainerItemProxy */;
+		};
+		7419ED021DDBF2C500BB248D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7419ECE01DDBF2C500BB248D /* H264EncoderKit */;
+			targetProxy = 7419ED011DDBF2C500BB248D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7419ECE81DDBF2C500BB248D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7419ECE91DDBF2C500BB248D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7419ECED1DDBF2C500BB248D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7419ECEE1DDBF2C500BB248D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7419ED071DDBF2C500BB248D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7419ED081DDBF2C500BB248D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7419ED0A1DDBF2C500BB248D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W7486T4Q82;
+				INFOPLIST_FILE = H264EncoderKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jd.com.H264EncoderKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7419ED0B1DDBF2C500BB248D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W7486T4Q82;
+				INFOPLIST_FILE = H264EncoderKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jd.com.H264EncoderKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7419ED0D1DDBF2C500BB248D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W7486T4Q82;
+				INFOPLIST_FILE = H264EncoderKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jd.com.H264EncoderKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H264EncoderKit.app/H264EncoderKit";
+			};
+			name = Debug;
+		};
+		7419ED0E1DDBF2C500BB248D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W7486T4Q82;
+				INFOPLIST_FILE = H264EncoderKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jd.com.H264EncoderKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H264EncoderKit.app/H264EncoderKit";
+			};
+			name = Release;
+		};
+		7419ED101DDBF2C500BB248D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = W7486T4Q82;
+				INFOPLIST_FILE = H264EncoderKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jd.com.H264EncoderKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = H264EncoderKit;
+			};
+			name = Debug;
+		};
+		7419ED111DDBF2C500BB248D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = W7486T4Q82;
+				INFOPLIST_FILE = H264EncoderKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jd.com.H264EncoderKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = H264EncoderKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7419ECDC1DDBF2C500BB248D /* Build configuration list for PBXProject "H264EncoderKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7419ED071DDBF2C500BB248D /* Debug */,
+				7419ED081DDBF2C500BB248D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7419ED091DDBF2C500BB248D /* Build configuration list for PBXNativeTarget "H264EncoderKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7419ED0A1DDBF2C500BB248D /* Debug */,
+				7419ED0B1DDBF2C500BB248D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7419ED0C1DDBF2C500BB248D /* Build configuration list for PBXNativeTarget "H264EncoderKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7419ED0D1DDBF2C500BB248D /* Debug */,
+				7419ED0E1DDBF2C500BB248D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7419ED0F1DDBF2C500BB248D /* Build configuration list for PBXNativeTarget "H264EncoderKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7419ED101DDBF2C500BB248D /* Debug */,
+				7419ED111DDBF2C500BB248D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7419ECD91DDBF2C500BB248D /* Project object */;
+}
