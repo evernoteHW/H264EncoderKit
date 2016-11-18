@@ -18,6 +18,7 @@ final class VideoPacket: NSObject{
         self.init()
         self.size = size;
         //开辟内存
+        
         self.buffer = unsafeBitCast(malloc(size), to: UnsafeMutablePointer<UInt8>.self)
     }
     override init() {
@@ -25,7 +26,7 @@ final class VideoPacket: NSObject{
   
     }
 }
-private let __s2: [UInt8] = [0,0,0,1]
+private let __s2: [UInt8] = [0x00, 0x00, 0x00, 0x01]
 
 final class H264InputStream: NSObject {
     
@@ -60,16 +61,12 @@ final class H264InputStream: NSObject {
             return nil
         }
         if bufferSize >= 5 {
-//            var a = 42
+            
             var bufferBegin: UnsafeMutablePointer<UInt8> = buffer + 4
             let bufferEnd: UnsafeMutablePointer<UInt8> = buffer + bufferSize
             
-            print(bufferBegin);
-            
-            
-            
-            while bufferBegin.pointee != bufferEnd.pointee {
-//                print(bufferBegin.pointee)
+            while bufferBegin != bufferEnd {
+
                 if bufferBegin.pointee == 0x01 {
                     if memcmp(bufferBegin - 3 , __s2, 4) == 0 {
                         let packetSize = bufferBegin - unsafeBitCast(buffer, to: UnsafeMutablePointer<UInt8>.self) - 3

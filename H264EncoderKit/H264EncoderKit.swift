@@ -15,8 +15,7 @@ public final class H264EncoderKit: NSObject {
     
     private var inputWidth: Int = 0
     private var inputHeight: Int = 0
-    public var outputWidth: Int = 0
-    public var outputHeight: Int = 0
+
     private var aQueue: DispatchQueue?
     private var encodingSession: VTCompressionSession?
     
@@ -39,9 +38,6 @@ public final class H264EncoderKit: NSObject {
         
         self.inputWidth = inputWidth
         self.inputHeight = inputHeight
-        
-        self.outputWidth = inputWidth
-        self.outputHeight = inputHeight
         
         self.commmitConfiguration()
     }
@@ -147,20 +143,26 @@ public final class H264EncoderKit: NSObject {
                     sampleData.append(pps_pointee, count: ppsLength.pointee)
                     
                     H264FileHandle.shareInstance.fileHandle.write(sampleData)
-                    
-                    sps.deallocate(capacity: 1)
-                    pps.deallocate(capacity: 1)
-                    spsLength.deallocate(capacity: 1)
-                    ppsLength.deallocate(capacity: 1)
-                    spsCount.deallocate(capacity: 1)
-                    ppsCount.deallocate(capacity: 1)
-                    
-                    sps.deinitialize()
-                    pps.deinitialize()
-                    spsLength.deinitialize()
-                    ppsLength.deinitialize()
-                    spsCount.deinitialize()
-                    ppsCount.deinitialize()
+//                    free(sps)
+//                    free(pps)
+//                    free(spsLength)
+//                    free(ppsLength)
+//                    free(spsCount)
+//                    free(ppsCount)
+//                    
+//                    sps.deallocate(capacity: 1)
+//                    pps.deallocate(capacity: 1)
+//                    spsLength.deallocate(capacity: 1)
+//                    ppsLength.deallocate(capacity: 1)
+//                    spsCount.deallocate(capacity: 1)
+//                    ppsCount.deallocate(capacity: 1)
+//                    
+//                    sps.deinitialize()
+//                    pps.deinitialize()
+//                    spsLength.deinitialize()
+//                    ppsLength.deinitialize()
+//                    spsCount.deinitialize()
+//                    ppsCount.deinitialize()
                 }
             }
             //写入视频数据
