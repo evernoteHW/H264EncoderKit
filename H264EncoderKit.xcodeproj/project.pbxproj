@@ -15,7 +15,10 @@
 		7419ECFA1DDBF2C500BB248D /* H264EncoderKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ECF91DDBF2C500BB248D /* H264EncoderKitTests.swift */; };
 		7419ED051DDBF2C500BB248D /* H264EncoderKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ED041DDBF2C500BB248D /* H264EncoderKitUITests.swift */; };
 		7419ED131DDC075400BB248D /* H264EncoderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419ED121DDC075400BB248D /* H264EncoderKit.swift */; };
+		744180A91DDDB18200853176 /* H264DeconderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744180A81DDDB18200853176 /* H264DeconderKit.swift */; };
+		744180AB1DDDC21100853176 /* H264InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744180AA1DDDC21100853176 /* H264InputStream.swift */; };
 		74B59EC61DDD6FD2002F6611 /* H264FileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B59EC51DDD6FD2002F6611 /* H264FileHandle.swift */; };
+		74FDF7BC1DDDE72F00068FB9 /* test.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 74FDF7BB1DDDE72F00068FB9 /* test.h264 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,10 @@
 		7419ED041DDBF2C500BB248D /* H264EncoderKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264EncoderKitUITests.swift; sourceTree = "<group>"; };
 		7419ED061DDBF2C500BB248D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7419ED121DDC075400BB248D /* H264EncoderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264EncoderKit.swift; sourceTree = "<group>"; };
+		744180A81DDDB18200853176 /* H264DeconderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264DeconderKit.swift; sourceTree = "<group>"; };
+		744180AA1DDDC21100853176 /* H264InputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264InputStream.swift; sourceTree = "<group>"; };
 		74B59EC51DDD6FD2002F6611 /* H264FileHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264FileHandle.swift; sourceTree = "<group>"; };
+		74FDF7BB1DDDE72F00068FB9 /* test.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.h264; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		7419ECE31DDBF2C500BB248D /* H264EncoderKit */ = {
 			isa = PBXGroup;
 			children = (
+				74FDF7BB1DDDE72F00068FB9 /* test.h264 */,
 				7419ECE41DDBF2C500BB248D /* AppDelegate.swift */,
 				7419ECE61DDBF2C500BB248D /* ViewController.swift */,
 				7419ED121DDC075400BB248D /* H264EncoderKit.swift */,
+				744180A81DDDB18200853176 /* H264DeconderKit.swift */,
 				74B59EC51DDD6FD2002F6611 /* H264FileHandle.swift */,
+				744180AA1DDDC21100853176 /* H264InputStream.swift */,
 				7419ECE81DDBF2C500BB248D /* Main.storyboard */,
 				7419ECEB1DDBF2C500BB248D /* Assets.xcassets */,
 				7419ECED1DDBF2C500BB248D /* LaunchScreen.storyboard */,
@@ -244,6 +253,7 @@
 				7419ECEF1DDBF2C500BB248D /* LaunchScreen.storyboard in Resources */,
 				7419ECEC1DDBF2C500BB248D /* Assets.xcassets in Resources */,
 				7419ECEA1DDBF2C500BB248D /* Main.storyboard in Resources */,
+				74FDF7BC1DDDE72F00068FB9 /* test.h264 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744180A91DDDB18200853176 /* H264DeconderKit.swift in Sources */,
 				7419ECE71DDBF2C500BB248D /* ViewController.swift in Sources */,
 				7419ECE51DDBF2C500BB248D /* AppDelegate.swift in Sources */,
 				7419ED131DDC075400BB248D /* H264EncoderKit.swift in Sources */,
+				744180AB1DDDC21100853176 /* H264InputStream.swift in Sources */,
 				74B59EC61DDD6FD2002F6611 /* H264FileHandle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

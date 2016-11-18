@@ -9,13 +9,19 @@
 import UIKit
 import AVFoundation
 
+
 class ViewController: UIViewController {
     var h264Encoder: H264EncoderKit!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.startCamara()
-        self.configureSettings()
+        //采集视频
+//        self.startCamara()
+        //播放解码视频
+        
+        let h264DeEncoder = H264DeconderKit()
+        h264DeEncoder.decodeFile(fileName: "", fileExt: "")
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -23,12 +29,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func configureSettings() {
-        h264Encoder = H264EncoderKit()
-        
-    }
+   
     func startCamara()  {
         do{
+            h264Encoder = H264EncoderKit(inputWidth: 720, inputHeight: 1280)
             //自定义摄像头
             // input device
             let cameraDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -36,7 +40,7 @@ class ViewController: UIViewController {
             
             // output device
             let outputDevice = AVCaptureVideoDataOutput()
-            outputDevice.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String : NSNumber(value: kCVPixelFormatType_32BGRA)]
+            outputDevice.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String : NSNumber(value: kCVPixelFormatType_420YpCbCr8BiPlanarFullRange)]
             //在某个线程进行回调 是否要在主线程回调 待研究
             outputDevice.setSampleBufferDelegate(self, queue: DispatchQueue.main)
             
